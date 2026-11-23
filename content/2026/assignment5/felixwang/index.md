@@ -19,7 +19,7 @@ On the one side, I still believe granting coding agents enough permission, auton
 
 Below is a graph illustrating my workflow across all the assignments: me and my agent doing research side by side, choosing a few directions and letting my agent build, then test and gather results and conclusions, finally with some human decisions to enter the next cycle.
 
-![A cycle connecting research, a new baseline, controlled comparisons, and findings.](fig1_workflow.svg "My workflow: research, build, test one change, and repeat.")
+![Workflow: research, build, controlled A/B tests, human decision, and repeat.](fig1_workflow.svg "My workflow: research, build, test one change, and repeat.")
 
 However, sometimes I found that when working on deep and hard problems, over reliance on my agent could be harmful and inefficient. There were quite a few examples from A4, where I run many overnight sessions but many times the sessions only explore along one direction or keep iterating on several factors without exploring further. Those overnight sessions might bring the performance higher a bit but tend not to produce very useful information for further improvement, especially if we’re looking for large changes that could improve dramatically.
 
@@ -33,7 +33,7 @@ The second lesson is more straightforward. In the first half of A3, I pretty muc
 
 Below is the graph visualizing some examples from A3/4/5, showcasing the instability I was describing.
 
-![Repeated A3–A5 runs comparing total solves and which tasks passed.](fig2_repeat_runs.svg "Similar scores can hide different task outcomes across runs.")
+![Total tasks solved across repeated runs in A3, A4, and A5.](fig2_repeat_runs.svg "Similar scores can hide different task outcomes across runs.")
 
 The first time it happened I was actually blaming the grader infra changes haha. But as I tried more it was pretty obvious that the infra fluctuations are rather minor but there’s always an inherent level of instability and randomness in different versions (e.g. my A3 passback ver is a good example of high potential but high instability).
 
@@ -63,4 +63,6 @@ In my case, no-thinking didn’t increase the speed of completion. Faster action
 
 Of course throughout the whole semester I learnt more than these but the above 4 lessons are the most major takeaways and conclude the class nicely for myself. It was an amazing learning journey.
 
-Disclosure: Claude Code assisted to make the images, all data are from real assignment results.
+## AI use
+
+I wrote the blog text myself. Claude Code helped create the figures, format the post, and open the pull request. All data come from my actual assignment results.
