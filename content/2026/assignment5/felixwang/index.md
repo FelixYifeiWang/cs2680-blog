@@ -43,7 +43,7 @@ That leads to my practice later to freeze each version and experiment with them 
 
 Every time I asked my Claude to migrate An to A(n+1) and make a minimal runnable first attempt, I was expecting a better result but always got a very bad one. That’s where this lesson was mainly from.
 
-For example, in A3 my architecture included 5 independent workers, a cheaper model called Standard trying first, a more expensive model called Expert for reviewing/assisting, and fresh retries. Apparently that got pretty good result. But when the same harness directly migrated to A4, with now fixed model and one shared GPU, the minimal migrated first version only got 1/26 on the leaderboard. That’s a different set from the 25 public tasks used for the local A4 runs in Fig. 2.
+For example, in A3 my architecture included 5 independent workers, a cheaper model called Standard trying first, a more expensive model called Expert for reviewing/assisting, and fresh retries. Apparently that got a pretty good result. But when the same harness directly migrated to A4, with now fixed model and one shared GPU, the minimal migrated first version only got 1/26 on the leaderboard. That’s a different set from the 25 public tasks used for the local A4 runs in Fig. 2.
 
 Below is a chart showing the serving benchmark: the same 477 requests, from 25 real agent conversations.
 
@@ -53,7 +53,7 @@ In this benchmark, fewer concurrent sessions or host caching made the same workl
 
 ## 4. Faster actions don’t always mean faster solves
 
-Seeing many classmates benefited from no-thinking mode, I was making the same assumption: no-thinking means faster actions and could lead to more solves.
+Seeing many classmates benefit from no-thinking mode, I was making the same assumption: no-thinking means faster actions and could lead to more solves.
 
 That wasn’t what I saw in one paired local run in A4. I compared two versions on the same 13 public tasks: lean66 used adaptive thinking, meaning it only turned thinking on at certain decision points, and lean68 had thinking off throughout. Everything else was the same. Results are below:
 
